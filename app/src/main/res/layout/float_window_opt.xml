@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="50dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:layout_marginRight="50px"
+    android:alpha="0.8"
+    android:background="#8BC34A"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    android:translationX="20dp">
+
+    <RadioGroup
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:background="#3A929E"
+        android:backgroundTint="#009688"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <RadioButton
+            android:id="@+id/r0"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:backgroundTint="#DCD4D4"
+            android:backgroundTintMode="add"
+            android:checked="true"
+            android:tag="r0"
+            android:text="0" />
+
+        <RadioButton
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:tag="r1"
+            android:text="1" />
+
+        <RadioButton
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:tag="r2"
+            android:text="2" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_float_opt_load"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:alpha="0.6"
+            android:background="@color/purple_200"
+            android:gravity="center"
+            android:text="刷新"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_float_opt_record_play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:alpha="0.6"
+        android:background="@android:color/holo_purple"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="GO"
+        android:textColor="@color/white" />
+
+</LinearLayout>
